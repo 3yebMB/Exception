@@ -3,17 +3,23 @@ public class Main {
 
     public static void main(String[] args) throws MyArraySizeException {
 
-        String[][] arr = new String[SIZE][SIZE];
-        String[][] arr2 = new String[SIZE+1][SIZE+1];
-        String[][] arr3 = new String[SIZE-1][SIZE+1];
+//        String[][] arr = new String[SIZE][SIZE];
+//        String[][] arr2 = new String[SIZE+1][SIZE+1];
+//        String[][] arr3 = new String[SIZE-1][SIZE+1];
+//
+//        for (int i=0; i<SIZE; i++)
+//            for (int y=0; y<SIZE; y++){
+//            arr[i][y] = Integer.toString(i) + Integer.toString(y);
+//        }
+//
+//        getArr(arr2);
+//        getArr(arr3);
 
-        for (int i=0; i<SIZE; i++)
-            for (int y=0; y<SIZE; y++){
-            arr[i][y] = Integer.toString(i) + Integer.toString(y);
-        }
+        System.out.println(calcutaleBMI(float height, float weight));
+    }
 
-        getArr(arr2);
-        getArr(arr3);
+    public static float calcutaleBMI(float a, float b){
+        
     }
 
     public static void getArr(String[][] str) throws MyArraySizeException{
