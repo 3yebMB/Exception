@@ -14,7 +14,7 @@ public class Main {
 
         //arr[1][3] = "-";
 
-        System.out.println("Сумма эелементов массива = "getArr(arr));
+        System.out.println("Сумма эелементов массива = "+getArr(arr));
         //getArr(arr3);
     }
 
