@@ -14,7 +14,7 @@ public class Main {
 
         //arr[1][3] = "-";
 
-        System.out.println(getArr(arr));
+        System.out.println("Сумма эелементов массива = "getArr(arr));
         //getArr(arr3);
     }
 
@@ -30,12 +30,10 @@ public class Main {
         for (int i=0; i<SIZE; i++)
             for (int y=0; y<SIZE; y++){
                 char ch[] = str[i][y].toCharArray();
-                for (char c : ch) {
-                    if (!Character.isDigit(c))
-                        throw new MyArrayDataException("В массиве присутствует неверный симпол, в ячейке ", i, y);
-                    else
-                        sum += Integer.parseInt(str[i][y]);
-                }
+                if (!(Character.isDigit(ch[0]) || Character.isDigit(ch[1])))
+                    throw new MyArrayDataException("В массиве присутствует неверный симпол, в ячейке ", i, y);
+                else
+                    sum += Integer.parseInt(str[i][y]);
             }
         return sum;
     }
